@@ -1,26 +1,26 @@
 # 💬 ChatAI Test – AI Full-stack Intern Assignment
 
-##  Mục tiêu
+## 🎯 Mục tiêu
 Xây dựng một ứng dụng chat hỗ trợ:
-1.  Multi-turn conversation (cuộc hội thoại nhiều lượt)
-2.  Chat về ảnh được tải lên (Image Chat)
-3.  Chat về dữ liệu CSV (Data Chat)
+1. Multi-turn conversation (cuộc hội thoại nhiều lượt)
+2. Chat về ảnh được tải lên (Image Chat)
+3. Chat về dữ liệu CSV (Data Chat)
 
 ---
 
-##  Tính năng chính
+## ⚙️ Tính năng chính
 
-###  Core Chat
+### 🗨️ Core Chat
 - Hiển thị lịch sử hội thoại (user + assistant)
 - Ghi rõ ai nói gì và khi nào
 - Hỗ trợ Markdown cơ bản
 
-###  Image Chat
+### 🖼️ Image Chat
 - Cho phép tải lên ảnh (PNG/JPG)
 - Hiển thị ảnh trong khung chat
 - Có thể hỏi về nội dung trong ảnh (VD: “Ảnh này có gì?”)
 
-###  CSV Data Chat
+### 📊 CSV Data Chat
 - Nhận CSV từ **file upload** hoặc **URL (GitHub raw CSV link)**
 - Có thể hỏi:
   - “Tóm tắt dataset này”
@@ -32,69 +32,75 @@ Xây dựng một ứng dụng chat hỗ trợ:
 ---
 
 ## 🧩 Công nghệ sử dụng
-- **Frontend:** React / TailwindCSS  
-- **Backend:** FastAPI / Flask  
-- **AI Model:** OpenAI / Claude / LLaMA (tùy chọn)  
-- **Database:** SQLite / PostgreSQL (tùy thiết lập)  
-- **Chart:** Chart.js / Recharts  
+- **Frontend:** HTML / CSS / JavaScript  
+- **Backend:** Flask  
+- **Database:** SQLite  
+- **AI Model:** OpenAI API (hoặc local fallback nếu không có key)  
+- **Chart:** matplotlib / pandas  
 
 ---
 
-##  Cấu trúc dự án
+## 📁 Cấu trúc dự án
 
 test_intern/
-├── demo.mp4 
+├── demo.mp4
 ├── README.md
 ├── main.py
 ├── models.py
 ├── chat_routes.py
-├── templates/
-├── static/
-├── uploads/
+├── db.py
+├── requirements.txt
 ├── .env
-└── requirements.txt
+├── templates/
+│ └── index.html
+├── static/
+│ ├── style.css
+│ └── script.js
+├── uploads/
+└── instance/
+└── chat_history.db
 
 yaml
 Sao chép mã
 
 ---
 
-##  Cách chạy project
+## 🚀 Cách chạy project
 
-### 1.Cài đặt thư viện
+### 1️⃣ Cài đặt thư viện
 ```bash
 pip install -r requirements.txt
-### **2.Chạy ứng dụng**
+2️⃣ Chạy ứng dụng
 bash
 Sao chép mã
 python main.py
-Ứng dụng sẽ chạy tại http://localhost:8000 hoặc http://127.0.0.1:5000
+Ứng dụng sẽ chạy tại
+👉 http://localhost:5000
+hoặc
+👉 http://127.0.0.1:5000
 
-## 🎥 Demo Video
-
-Nhấn vào liên kết hoặc hình bên dưới để phát video demo:
-
-[![Watch the demo](https://img.shields.io/badge/▶️-Watch%20Demo-blue)](https://github.com/NgocQuy3006/ChatAI_test/raw/main/demo.mp4)
-
+🎥 Demo Video
+🎥 Xem video demo tại đây : https://github.com/NgocQuy3006/ChatAI_test/raw/main/demo.mp4
 
 ✅ Ghi chú
 Giữ file .env bí mật, không commit API key.
 
 Có xử lý lỗi cho CSV hỏng hoặc URL sai.
 
-Giao diện tối giản nhưng rõ ràng, dễ dùng.
+Giao diện tối giản, rõ ràng, dễ dùng.
 
- Assignment for AI Full-stack Intern
+Cấu trúc thư mục gọn gàng, dễ mở rộng.
 
-yaml
+🪜 Commit & Push
+Mở Git Bash / Terminal trong thư mục D:\test_intern rồi chạy:
+
+bash
 Sao chép mã
-
----
-
-## 🪜 Sau đó commit và push:
-Mở **Git Bash / Terminal** trong thư mục `D:\test_intern` rồi chạy:
-
-```bash
 git add README.md demo.mp4
 git commit -m "Add full README and demo video"
 git push origin main
+
+
+
+
+

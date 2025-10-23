@@ -63,7 +63,7 @@ test_intern/
 ├── uploads/
 └── instance/
     └── chat_history.db
-```bash
+
 ## 🚀 Cách chạy project
 
 ---

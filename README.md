@@ -63,3 +63,52 @@ test_intern/
 ├── uploads/
 └── instance/
     └── chat_history.db
+## 🚀 Cách chạy project
+
+---
+
+> [!IMPORTANT]
+> ### 🧩 1️⃣ Cài đặt thư viện
+> ```bash
+> pip install -r requirements.txt
+> ```
+
+---
+
+> [!NOTE]
+> ### ⚙️ 2️⃣ Chạy ứng dụng
+> ```bash
+> python main.py
+> ```
+> Ứng dụng sẽ chạy tại:  
+> 👉 http://127.0.0.1:5000  
+> hoặc  
+> 👉 http://localhost:5000  
+
+---
+
+> [!TIP]
+> ### 🎥 Demo Video  
+> 🎬 Xem video demo tại đây:  
+> [https://github.com/NgocQuy3006/ChatAI_test/raw/main/demo.mp4](https://github.com/NgocQuy3006/ChatAI_test/raw/main/demo.mp4)
+
+---
+
+> [!CAUTION]
+> ### ✅ Ghi chú  
+> - Giữ file `.env` bí mật, không commit API key.  
+> - Có xử lý lỗi cho CSV hỏng hoặc URL sai.  
+> - Giao diện tối giản, rõ ràng, dễ dùng.  
+> - Cấu trúc thư mục gọn gàng, dễ mở rộng.  
+
+---
+
+> [!TIP]
+> ### 🪜 Commit & Push  
+> ```bash
+> git add README.md demo.mp4
+> git commit -m "Add full README and demo video"
+> git push origin main
+> ```
+
+---

@@ -70,8 +70,10 @@ Sao chép mã
 python main.py
 Ứng dụng sẽ chạy tại http://localhost:8000 hoặc http://127.0.0.1:5000
 
-🎥 Demo Video
+## 🎥 Demo Video
+
 Nhấn vào liên kết hoặc hình bên dưới để phát video demo:
+
 [![Watch the demo](https://img.shields.io/badge/▶️-Watch%20Demo-blue)](https://github.com/NgocQuy3006/ChatAI_test/raw/main/demo.mp4)
 
 

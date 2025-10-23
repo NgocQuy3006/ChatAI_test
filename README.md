@@ -1,26 +1,26 @@
 # 💬 ChatAI Test – AI Full-stack Intern Assignment
 
-## 🚀 Mục tiêu
+##  Mục tiêu
 Xây dựng một ứng dụng chat hỗ trợ:
-1. 💭 Multi-turn conversation (cuộc hội thoại nhiều lượt)
-2. 🖼️ Chat về ảnh được tải lên (Image Chat)
-3. 📊 Chat về dữ liệu CSV (Data Chat)
+1.  Multi-turn conversation (cuộc hội thoại nhiều lượt)
+2.  Chat về ảnh được tải lên (Image Chat)
+3.  Chat về dữ liệu CSV (Data Chat)
 
 ---
 
-## ⚙️ Tính năng chính
+##  Tính năng chính
 
-### 💬 Core Chat
+###  Core Chat
 - Hiển thị lịch sử hội thoại (user + assistant)
 - Ghi rõ ai nói gì và khi nào
 - Hỗ trợ Markdown cơ bản
 
-### 🖼️ Image Chat
+###  Image Chat
 - Cho phép tải lên ảnh (PNG/JPG)
 - Hiển thị ảnh trong khung chat
 - Có thể hỏi về nội dung trong ảnh (VD: “Ảnh này có gì?”)
 
-### 📊 CSV Data Chat
+###  CSV Data Chat
 - Nhận CSV từ **file upload** hoặc **URL (GitHub raw CSV link)**
 - Có thể hỏi:
   - “Tóm tắt dataset này”
@@ -40,10 +40,10 @@ Xây dựng một ứng dụng chat hỗ trợ:
 
 ---
 
-## 🧠 Cấu trúc dự án
+##  Cấu trúc dự án
 
 test_intern/
-├── demo.mp4 # 🎥 Video demo
+├── demo.mp4 
 ├── README.md
 ├── main.py
 ├── models.py
@@ -59,24 +59,21 @@ Sao chép mã
 
 ---
 
-## 🪜 Cách chạy project
+##  Cách chạy project
 
-### 1️⃣ Cài đặt thư viện
+### 1.Cài đặt thư viện
 ```bash
 pip install -r requirements.txt
-2️⃣ Chạy ứng dụng
+### **2.Chạy ứng dụng**
 bash
 Sao chép mã
 python main.py
 Ứng dụng sẽ chạy tại http://localhost:8000 hoặc http://127.0.0.1:5000
 
 🎥 Demo Video
-👉 Cách 1: Xem video trực tiếp tại GitHub
 Nhấn vào liên kết hoặc hình bên dưới để phát video demo:
+[![Watch the demo](https://img.shields.io/badge/▶️-Watch%20Demo-blue)](https://github.com/NgocQuy3006/ChatAI_test/raw/main/demo.mp4)
 
-
-
-🔹 Đảm bảo file demo.mp4 nằm trong thư mục gốc của repo (chung với README.md).
 
 ✅ Ghi chú
 Giữ file .env bí mật, không commit API key.
@@ -85,7 +82,7 @@ Có xử lý lỗi cho CSV hỏng hoặc URL sai.
 
 Giao diện tối giản nhưng rõ ràng, dễ dùng.
 
-🧑‍💻 Assignment for AI Full-stack Intern – Built with ❤️ by [Your Name]
+ Assignment for AI Full-stack Intern
 
 yaml
 Sao chép mã

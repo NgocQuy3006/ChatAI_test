@@ -73,7 +73,6 @@ pip install -r requirements.txt
 ```bash
 ### 2️⃣ Chạy ứng dụng
 ```bash
-Sao chép mã
 python main.py
 Ứng dụng sẽ chạy tại
 👉 http://127.0.0.1:5000

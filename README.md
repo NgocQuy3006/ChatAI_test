@@ -70,12 +70,14 @@ Sao chép mã
 ### 1️⃣ Cài đặt thư viện
 ```bash
 pip install -r requirements.txt
+```bash
 ### 2️⃣ Chạy ứng dụng
 ```bash
 Sao chép mã
 python main.py
 Ứng dụng sẽ chạy tại
 👉 http://127.0.0.1:5000
+```bash
 
 🎥 Demo Video
 🎥 Xem video demo tại đây : https://github.com/NgocQuy3006/ChatAI_test/raw/main/demo.mp4

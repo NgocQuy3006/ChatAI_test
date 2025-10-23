@@ -70,13 +70,11 @@ Sao chép mã
 ### 1️⃣ Cài đặt thư viện
 ```bash
 pip install -r requirements.txt
- **`###`** 2️⃣ Chạy ứng dụng
-bash
+### 2️⃣ Chạy ứng dụng
+```bash
 Sao chép mã
 python main.py
 Ứng dụng sẽ chạy tại
-👉 http://localhost:5000
-hoặc
 👉 http://127.0.0.1:5000
 
 🎥 Demo Video

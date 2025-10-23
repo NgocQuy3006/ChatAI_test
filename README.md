@@ -67,17 +67,15 @@ test_intern/
 
 ---
 
-> [!IMPORTANT]
-> ### 🧩 1️⃣ Cài đặt thư viện
-> ```bash
+### 🧩 1️⃣ Cài đặt thư viện
+> ```
 > pip install -r requirements.txt
 > ```
 
 ---
 
-> [!NOTE]
-> ### ⚙️ 2️⃣ Chạy ứng dụng
-> ```bash
+### ⚙️ 2️⃣ Chạy ứng dụng
+> ```
 > python main.py
 > ```
 > Ứng dụng sẽ chạy tại:  
@@ -87,15 +85,13 @@ test_intern/
 
 ---
 
-> [!TIP]
-> ### 🎥 Demo Video  
+### 🎥 Demo Video
 > 🎬 Xem video demo tại đây:  
 > [https://github.com/NgocQuy3006/ChatAI_test/raw/main/demo.mp4](https://github.com/NgocQuy3006/ChatAI_test/raw/main/demo.mp4)
 
 ---
 
-> [!CAUTION]
-> ### ✅ Ghi chú  
+### ✅ Ghi chú
 > - Giữ file `.env` bí mật, không commit API key.  
 > - Có xử lý lỗi cho CSV hỏng hoặc URL sai.  
 > - Giao diện tối giản, rõ ràng, dễ dùng.  
@@ -103,12 +99,12 @@ test_intern/
 
 ---
 
-> [!TIP]
-> ### 🪜 Commit & Push  
-> ```bash
+### 🪜 Commit & Push
+> ```
 > git add README.md demo.mp4
 > git commit -m "Add full README and demo video"
 > git push origin main
 > ```
 
 ---
+

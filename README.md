@@ -70,7 +70,7 @@ Sao chép mã
 ### 1️⃣ Cài đặt thư viện
 ```bash
 pip install -r requirements.txt
-2️⃣ Chạy ứng dụng
+ **`###`** 2️⃣ Chạy ứng dụng
 bash
 Sao chép mã
 python main.py

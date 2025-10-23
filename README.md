@@ -41,7 +41,7 @@ Xây dựng một ứng dụng chat hỗ trợ:
 ---
 
 ## 📁 Cấu trúc dự án
-
+```bash
 test_intern/
 ├── demo.mp4
 ├── README.md
@@ -52,36 +52,34 @@ test_intern/
 ├── requirements.txt
 ├── .env
 ├── templates/
-│ └── index.html
+│   └── index.html
 ├── static/
-│ ├── style.css
-│ └── script.js
+│   ├── style.css
+│   └── script.js
 ├── uploads/
 └── instance/
-└── chat_history.db
-
-yaml
+    └── chat_history.db
+🚀 Cách chạy project
+🧱 1️⃣ Cài đặt thư viện
+bash
 Sao chép mã
-
----
-
-## 🚀 Cách chạy project
-
-### 1️⃣ Cài đặt thư viện
-```bash
 pip install -r requirements.txt
-```bash
-### 2️⃣ Chạy ứng dụng
-```bash
+⚙️ 2️⃣ Chạy ứng dụng
+bash
+Sao chép mã
 python main.py
-Ứng dụng sẽ chạy tại
+Ứng dụng sẽ chạy tại:
 👉 http://127.0.0.1:5000
-```bash
+hoặc
+👉 http://localhost:5000
 
 🎥 Demo Video
-🎥 Xem video demo tại đây : https://github.com/NgocQuy3006/ChatAI_test/raw/main/demo.mp4
+🎬 Xem video demo tại đây:
+https://github.com/NgocQuy3006/ChatAI_test/raw/main/demo.mp4
 
-✅ Ghi chú
+🧩 Ghi chú
+✅ Lưu ý:
+
 Giữ file .env bí mật, không commit API key.
 
 Có xử lý lỗi cho CSV hỏng hoặc URL sai.
@@ -91,14 +89,13 @@ Giao diện tối giản, rõ ràng, dễ dùng.
 Cấu trúc thư mục gọn gàng, dễ mở rộng.
 
 🪜 Commit & Push
-Mở Git Bash / Terminal trong thư mục D:\test_intern rồi chạy:
-
 bash
 Sao chép mã
 git add README.md demo.mp4
 git commit -m "Add full README and demo video"
 git push origin main
-
+less
+Sao chép mã
 
 
 

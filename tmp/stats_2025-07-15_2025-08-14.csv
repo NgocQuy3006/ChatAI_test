@@ -1,0 +1,20 @@
+Summary
+Metric,Value
+Total events,12
+Total users,4
+Total bookings,9
+Total revenue,213000.0
+
+Bookings by date
+Date,Count
+2025-08-13,8
+2025-08-14,1
+
+Top 5 events
+Event ID,Name,Count
+1,Gốm Show - Hà Nội,5
+3,Live Concert Sơn Tùng M-TP,4
+
+Top 5 users
+User ID,Name,Count
+1,userKhachHang,9

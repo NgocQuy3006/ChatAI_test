@@ -1,0 +1,368 @@
+/*  Tổng thể */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffe6f2, #fff0f6, #fff);
+  margin: 0;
+  padding: 20px;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+/*  Bố cục tổng */
+.layout {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/*  Sidebar */
+.sidebar {
+  width: 240px;
+  background: #ffffffc9;
+  backdrop-filter: blur(10px);
+  padding: 14px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(255, 105, 180, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sidebar:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 30px rgba(255, 105, 180, 0.3);
+}
+
+.sidebar h3 {
+  text-align: center;
+  color: #ff69b4;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 420px;
+  overflow-y: auto;
+}
+
+.sidebar li {
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin: 4px 0;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.sidebar li:hover,
+.sidebar li.active {
+  background: linear-gradient(90deg, #ffb6c1, #ffc0cb);
+  color: white;
+  box-shadow: 0 3px 6px rgba(255, 182, 193, 0.5);
+}
+
+/*  Khung chat */
+.chat-container {
+  flex: 1;
+  background: #fffafc;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 750px;
+}
+
+.chat-container:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 30px rgba(255, 105, 180, 0.3);
+}
+
+/*  Khung tin nhắn */
+.chat-box {
+  height: 450px;
+  overflow-y: auto;
+  border: 1px solid #ffc4d6;
+  border-radius: 14px;
+  padding: 14px;
+  margin-bottom: 14px;
+  background: #fff0f5;
+  scroll-behavior: smooth;
+  transition: background 0.3s ease;
+}
+
+/*  Bong bóng tin nhắn */
+.msg {
+  margin: 10px 0;
+  padding: 10px 14px;
+  border-radius: 16px;
+  max-width: 80%;
+  line-height: 1.5;
+  animation: fadeIn 0.4s ease;
+}
+
+/* Người dùng (màu hồng tươi) */
+.msg.user {
+  background: linear-gradient(135deg, #ffb6c1, #ff9ecd);
+  color: white;
+  text-align: right;
+  margin-left: auto;
+  box-shadow: 0 3px 8px rgba(255, 182, 193, 0.5);
+}
+
+/* Trợ lý AI (màu vàng nhẹ) */
+.msg.assistant {
+  background: linear-gradient(135deg, #fff7c2, #fff0a8);
+  color: #444;
+  margin-right: auto;
+  box-shadow: 0 3px 8px rgba(255, 240, 150, 0.4);
+}
+
+/*  Hiệu ứng xuất hiện */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*  Cuộn mượt & thanh cuộn tùy chỉnh */
+.chat-box::-webkit-scrollbar {
+  width: 6px;
+}
+.chat-box::-webkit-scrollbar-thumb {
+  background: #ff99bb;
+  border-radius: 8px;
+}
+.chat-box::-webkit-scrollbar-thumb:hover {
+  background: #ff7faa;
+}
+
+/*  Input & button (nếu có) */
+input, textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #ffc0cb;
+  border-radius: 10px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #ff80aa;
+  box-shadow: 0 0 8px rgba(255, 105, 180, 0.3);
+}
+
+button {
+  background: linear-gradient(135deg, #ff80ab, #ffb6c1);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 105, 180, 0.3);
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(255, 105, 180, 0.4);
+}
+/* ============================
+   CHAT VỚI HÌNH ẢNH
+============================ */
+.image-chat-section {
+  border-top: 1px solid #ffc0cb;
+  padding-top: 15px;
+  margin-top: 20px;
+}
+
+.image-chat-section h3 {
+  color: #ff69b4;
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Nút chọn ảnh */
+.image-upload button {
+  background: linear-gradient(135deg, #ffd1dc, #ffb6c1);
+  border: none;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.image-upload button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #ff9dbb, #ffb6c1);
+}
+
+/* Xem trước ảnh */
+.image-preview {
+  margin-top: 10px;
+  text-align: center;
+}
+.image-preview img {
+  max-width: 250px;
+  border-radius: 10px;
+  border: 2px solid #ffc0cb;
+  box-shadow: 0 4px 10px rgba(255, 182, 193, 0.4);
+}
+
+/* Ô hỏi ảnh */
+.image-question-area {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+.image-question-area input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ffc0cb;
+  border-radius: 8px;
+  outline: none;
+}
+.image-question-area button {
+  background: linear-gradient(135deg, #ffb6c1, #ff69b4);
+  border: none;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.image-question-area button:hover {
+  transform: scale(1.05);
+}
+/* ==========================
+   Ô NHẬP TIN NHẮN CHÍNH
+========================== */
+.text-chat-section {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  align-items: center;
+}
+
+.text-chat-section input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ffc0cb;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.text-chat-section input:focus {
+  border-color: #ff80aa;
+  box-shadow: 0 0 8px rgba(255, 105, 180, 0.3);
+}
+
+.text-chat-section button {
+  background: linear-gradient(135deg, #ffb6c1, #ff69b4);
+  border: none;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.text-chat-section button:hover {
+  transform: scale(1.05);
+}
+.chat-image {
+  max-width: 200px;
+  border-radius: 10px;
+  margin-top: 6px;
+  display: block;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.conversation-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.conversation-item:hover {
+  background: #ffe6ef;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #ff4d6d;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.delete-btn:hover {
+  color: #d00000;
+  transform: scale(1.2);
+}
+
+.csv-section {
+  background: #fff4f8;
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin-top: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.csv-section div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.csv-section input[type="text"] {
+  flex: 1;
+  padding: 6px 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.csv-section button {
+  padding: 6px 10px;
+  border: none;
+  background: #ffc1d6;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.csv-section button.main {
+  background: #ff7fa1;
+  color: #fff;
+}
+
+.csv-section button:hover {
+  opacity: 0.9;
+}
+.msg-time {
+  font-size: 11px;
+  color: #777;
+  margin-top: 4px;
+  text-align: right;
+  opacity: 0.8;
+}
+.msg.assistant .msg-time {
+  text-align: left;
+}

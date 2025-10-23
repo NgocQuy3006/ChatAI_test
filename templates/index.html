@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Chat</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+  <div class="layout">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h3>🗂️ Các đoạn chat</h3>
+      <ul id="conversation-list"></ul>
+      <button id="new-chat">+ Cuộc trò chuyện mới</button>
+    </div>
+
+    <!-- Khung chat chính -->
+    <div class="chat-container">
+      <h2>💬 AI Chat</h2>
+
+      <!-- Hiển thị tin nhắn -->
+      <div id="chat-box" class="chat-box"></div>
+
+      <!--  Chat text bình thường -->
+      <form id="chat-form" class="text-chat-section">
+        <input type="text" id="message" placeholder="Nhập tin nhắn..." required>
+        <button type="submit">Gửi</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

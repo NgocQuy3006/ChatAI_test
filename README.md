@@ -63,11 +63,13 @@ test_intern/
 ├── uploads/
 └── instance/
     └── chat_history.db
+```bash
 ## 🚀 Cách chạy project
 
 ---
 
 ### 🧩 1️⃣ Cài đặt thư viện
+> **Lệnh cài đặt:**
 > ```
 > pip install -r requirements.txt
 > ```
@@ -75,6 +77,7 @@ test_intern/
 ---
 
 ### ⚙️ 2️⃣ Chạy ứng dụng
+> **Khởi động server:**
 > ```
 > python main.py
 > ```
@@ -100,11 +103,9 @@ test_intern/
 ---
 
 ### 🪜 Commit & Push
+> **Các lệnh Git cần chạy:**
 > ```
 > git add README.md demo.mp4
 > git commit -m "Add full README and demo video"
 > git push origin main
 > ```
-
----
-

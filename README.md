@@ -1,6 +1,6 @@
-# 💬 ChatAI Test – AI Full-stack Intern Assignment
+#  ChatAI Test – AI Full-stack Intern Assignment
 
-## 🎯 Mục tiêu
+##  Mục tiêu
 > Xây dựng một ứng dụng chat hỗ trợ:
 > 1. Multi-turn conversation (cuộc hội thoại nhiều lượt)
 > 2. Chat về ảnh được tải lên (Image Chat)
@@ -8,23 +8,23 @@
 
 ---
 
-## ⚙️ Tính năng chính
+##  Tính năng chính
 
-> ### 🗨️ Core Chat
+> ###  Core Chat
 > - Hiển thị lịch sử hội thoại (user + assistant)
 > - Ghi rõ ai nói gì và khi nào
 > - Hỗ trợ Markdown cơ bản
 
 ---
 
-> ### 🖼️ Image Chat
+> ###  Image Chat
 > - Cho phép tải lên ảnh (PNG/JPG)
 > - Hiển thị ảnh trong khung chat
 > - Có thể hỏi về nội dung trong ảnh (VD: “Ảnh này có gì?”)
 
 ---
 
-> ### 📊 CSV Data Chat
+> ###  CSV Data Chat
 > - Nhận CSV từ **file upload** hoặc **URL (GitHub raw CSV link)**
 > - Có thể hỏi:
 >   - “Tóm tắt dataset này”
@@ -35,7 +35,7 @@
 
 ---
 
-## 🧩 Công nghệ sử dụng
+##  Công nghệ sử dụng
 > - **Frontend:** HTML / CSS / JavaScript  
 > - **Backend:** Flask  
 > - **Database:** SQLite  
@@ -44,7 +44,7 @@
 
 ---
 
-## 📁 Cấu trúc dự án
+##  Cấu trúc dự án
 ```bash
 test_intern/
 ├── demo.mp4
@@ -68,7 +68,7 @@ test_intern/
 
 ---
 
-### 🧩 1️⃣ Cài đặt thư viện
+###  Cài đặt thư viện
 > **Lệnh cài đặt:**
 > ```
 > pip install -r requirements.txt
@@ -76,25 +76,25 @@ test_intern/
 
 ---
 
-### ⚙️ 2️⃣ Chạy ứng dụng
+###  Chạy ứng dụng
 > **Khởi động server:**
 > ```
 > python main.py
 > ```
 > Ứng dụng sẽ chạy tại:  
-> 👉 http://127.0.0.1:5000  
+>  http://127.0.0.1:5000  
 > hoặc  
-> 👉 http://localhost:5000  
+>  http://localhost:5000  
 
 ---
 
-### 🎥 Demo Video
+###  Demo Video
 > 🎬 Xem video demo tại đây:  
 > [https://github.com/NgocQuy3006/ChatAI_test/raw/main/demo.mp4](https://github.com/NgocQuy3006/ChatAI_test/raw/main/demo.mp4)
 
 ---
 
-### ✅ Ghi chú
+###  Ghi chú
 > - Giữ file `.env` bí mật, không commit API key.  
 > - Có xử lý lỗi cho CSV hỏng hoặc URL sai.  
 > - Giao diện tối giản, rõ ràng, dễ dùng.  
@@ -102,7 +102,7 @@ test_intern/
 
 ---
 
-### 🪜 Commit & Push
+###  Commit & Push
 > **Các lệnh Git cần chạy:**
 > ```
 > git add README.md demo.mp4

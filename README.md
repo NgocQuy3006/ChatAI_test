@@ -64,7 +64,7 @@ test_intern/
 └── instance/
     └── chat_history.db
 ```
-## 🚀 Cách chạy project
+##  Cách chạy project
 
 ---
 
@@ -102,10 +102,4 @@ test_intern/
 
 ---
 
-###  Commit & Push
-> **Các lệnh Git cần chạy:**
-> ```
-> git add README.md demo.mp4
-> git commit -m "Add full README and demo video"
-> git push origin main
-> ```
+
